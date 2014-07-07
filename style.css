@@ -1,0 +1,70 @@
+html, body, div, span, adwordsboxt, object, iframe, p, blockquote, pre, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+h1, h2, h3, h4, h5, h6, input, textarea 
+{
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font-size: 14px;
+    font-family: arial;
+}
+a {color:#0080af;}
+
+/*общие*/
+body {width: 60%; margin:0 auto;}
+
+p {font-size: 14px;}
+
+.box-sizing
+{box-sizing: border-box;-moz-box-sizing: border-box;}
+
+.clear {clear: both;}
+
+.f-left {float: left;}
+
+.f-right {float: right;}
+
+.none {display: none;}
+
+h2 {font-size: 36px;font-weight: 100;}
+
+h3 {font-size: 24px;font-weight: 300;}
+
+.pre {white-space:pre;}
+
+h4 {font-size: 30px;color: black;font-weight: 100;}
+
+h5 {font-size: 18px;color: black;font-weight: 100;}
+
+.text-indent {text-indent:11px;}
+
+.text-align-c {text-align:center;}
+
+.margin-c {margin: 0 auto;}
+
+.position-rel {position: relative;}
+
+.position-abs {position: absolute;}
+
+.right {right: 0!important;}
+
+/*общие*/
+
+.patient {width: 60%; padding: 15px; background: rgba(0,0,0,.1); margin-bottom: 15px; }
+.patient .image {width: 150px; height: 150px; margin: 0px 15px 15px 0px }
+.dannye span {font-weight: bold; color: #0080af;}
+.patient .dannye h3, .patient .dannye p  {margin-bottom: 15px;}
+.edit, .remove {width: 30px; height: 30px; background: rgba(0,0,0,.5); top:15px;}
+.patient:hover .edit, .patient:hover .remove {display: block;}
+.remove {right: 30px; background-image: url(images/remove.png); cursor: pointer;}
+.edit { right:75px; background-image: url(images/edit.png); background-size: contain; background-position: center; cursor: pointer;}
+
+.big_btn {width:60%; border-radius: 6px; text-align: center; height: 50px; margin-top: 15px; margin-bottom: 15px; color:white; background: #60b100; cursor:pointer; line-height: 50px; font-size: 35px;}
+
+.form {width: 60%; margin-top: 15px; margin-bottom: 15px;text-align: center;}
+.form input, .fotm textarea {margin-bottom: 15px;} 
