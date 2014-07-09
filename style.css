@@ -57,6 +57,7 @@ h5 {font-size: 18px;color: black;font-weight: 100;}
 
 .patient {width: 60%; padding: 15px; background: rgba(0,0,0,.1); margin-bottom: 15px; }
 .patient .image {width: 150px; height: 150px; margin: 0px 15px 15px 0px }
+.dannye {width: 60%;}
 .dannye span {font-weight: bold; color: #0080af;}
 .patient .dannye h3, .patient .dannye p  {margin-bottom: 15px;}
 .edit, .remove {width: 30px; height: 30px; background: rgba(0,0,0,.5); top:15px;}

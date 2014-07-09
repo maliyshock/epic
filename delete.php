@@ -1,19 +1,22 @@
 <?php 
+require 'library.php';
 
 try
+  {
+  	$id = $_POST['id'];
+   	// создаём объект класса generalActs
+    $generalActs = new generalActs;
+    //запись коннекта в переменную PDO (объект)
+    $pdo = $generalActs->connect();
+    // обращаемся к методу и передаём ему необъодимые значения
+    if(!empty($id ))
     {
-      //$name = $_GET['name'];
-      $pdo = new PDO('mysql:host=localhost;dbname=scrubs', 'root', '');
-      $pdo->setAttribute(
-      PDO::ATTR_ERRMODE,
-      PDO::ERRMODE_EXCEPTION
-      );
-
-		$stmt = $pdo->prepare('DELETE FROM patients WHERE id = :id');
-		$stmt->bindParam(':id', $_POST['id']);
-		$stmt->execute();
-
-		echo  $_POST['id'];
+    	$generalActs->remove($pdo, $id);
+    	$list = $generalActs->createShortList($pdo);
+    	//require 'view/list.php';
+    	$view = file_get_contents('view/list.php');
+    	echo $view;
+    }
 	}
 
 catch(PDOException $e) 
