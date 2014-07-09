@@ -1,4 +1,4 @@
-<div id='spisok' class='patient margin-c position-rel'>
+<div class='patient margin-c position-rel'>
   <div class='image f-left'><img src ="<?php if (isset($row['photo'])) { echo $row['photo'];} else {echo 'images/no-photo.jpg';} ?>"></div>
 
   <div class='dannye f-left'>

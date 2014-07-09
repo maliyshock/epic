@@ -15,11 +15,11 @@
       $(".remove").click( function()
         {
           var id = $(this).attr('title');
-          $.post( "delete.php", {id: id} ).done(function(data) 
+          $.post( "delete.php", {id: id} ).success(function(data) 
           {
-            $("#spisok").remove();
-            $(".add_wrapper").append(data);
-            console.log(data);
+            $(".remove").parent().remove();
+            $('.message').html('<p>Удалён из базы... с позором!</p>').fadeIn(300).delay(5000).fadeOut(300);
+
           });
         }); 
     });
@@ -27,3 +27,4 @@
   <title>Scrubs</title>
 </head>
 <body>
+<div class="message"></div>

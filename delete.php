@@ -13,9 +13,7 @@ try
     {
     	$generalActs->remove($pdo, $id);
     	$list = $generalActs->createShortList($pdo);
-    	//require 'view/list.php';
-    	$view = file_get_contents('view/list.php');
-    	echo $view;
+    	echo "yes";
     }
 	}
 
